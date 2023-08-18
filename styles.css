@@ -1,0 +1,234 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('hiresPIC-10.jpg'); 
+    background-repeat: repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    font-family: Serif, sans-serif;
+    background-color: rgba(0,0,0, .4); 
+  }
+  
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    min-height: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .navbar-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #navbar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    position: fixed;
+    background: #003366;
+    flex-direction: row;
+    border-radius: 5px;
+  }
+  
+  .nav-link {
+    box-sizing: border-box;
+    font-family: Georgia, sans-serif;
+    color: #D3D3D3;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  #navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-link:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: translateX(-10px);
+    position: relative;
+    left: -10px;
+  }
+  
+  .container {
+    padding: 40px;
+  }
+  
+  .section-title {
+    text-align: center;
+  }
+  
+  #content {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .main-webpage{
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255,250,205, 0.58);
+    background-image: url('https://i.ibb.co/WPP3yDn/hires-PIC-04.jpg'); 
+    background-repeat: repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    box-shadow: 0px 50px 100px;
+    border-radius: 15px;
+  }
+  
+  .service-right-paragraph, .choose-me, .service-right{
+    text-align:left;
+  }
+  
+  .service-left-paragraph, .service-left{
+    text-align:right;
+  }
+  
+  .choose-me{
+    list-style: none;
+  }
+  
+  p { 
+    text-indent: 1em;
+  }
+  
+  form {padding: 50px;}
+  
+  textarea { resize: none;
+  width: 100%;
+  height: 200px;}
+  
+  /* Business Card Code To Flip It*/
+  
+  .business-card {
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  
+  .business-card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .business-card.flip .business-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .business-card-front,
+  .business-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .business-card-front {
+    background-color: white;
+    background-image: linear-gradient(to top, #6f00ff, #aa00ff, white 50%);
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .business-card-back {
+    background-color: white;
+    background-image: linear-gradient(to top, #6f00ff, #aa00ff);
+    transform: rotateY(180deg);
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* End Business Card Code To Flip It*/
+  
+  .detached-border {
+    border: 2px solid #c6c6c6;
+    border-radius: 10px;
+    padding: 85px 150px;
+  }
+  
+  .detached-border-back {border: 2px solid #c6c6c6;
+    border-radius: 10px;
+    padding: 75px;}
+  
+  .card-border{
+    border: 1px solid #ccc;
+    padding: 10px;}
+  
+  .business-name {
+    position: absolute;
+    top: 10px;
+    left: 19px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Ariel;
+  }
+  
+  .business-card-photo {
+    height: 140px;
+    width: 110px;
+    position: absolute;
+    top: 10px;
+    right: 19px;
+    border-radius: 10px;
+  }
+  
+  .catchphrase {
+    text-align:center;
+    font-family: Ariel;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .fade-in.fade-in-visible {
+    opacity: 1;
+  }
